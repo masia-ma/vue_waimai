@@ -1,0 +1,23 @@
+@url = http://localhost:4000
+
+###
+post {{url}}/users/register
+Content-Type: application/json
+
+{
+  "email": "916527363@qq.com",
+  "nickname": "masia",
+  "password": "123456"
+}
+
+###
+get {{url}}/users/register
+
+###
+post {{url}}/users/login
+Content-type: application/json
+
+{
+  "email": "916527363@qq.com",
+  "password": "123456"
+}
